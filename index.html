@@ -1,80 +1,46 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>BROAN Manufacturing Weekly Pulse</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f8fafc;
-        }
-        iframe {
-            width: 100%;
-            height: 1000px;
-            border: none;
-            margin-bottom: 40px;
-            background: white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3 {
-            color: #2d3748;
-        }
-        .insights-section {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-            margin-top: 40px;
-        }
-        ul {
-            padding-left: 20px;
-            color: #4a5568;
-        }
-    </style>
-</head>
-<body>
 
-    <h1 style="text-align: center; font-size: 2em; color: #1b4f72; margin-top: 20px;">
-        BROAN Manufacturing Weekly Pulse
-    </h1>
-    <p style="text-align: center; font-size: 1em; color: #555;">
-      Weeks Report (July 6 – July 12, 2025)
-    </p>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Consolidated Manufacturing Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #f8fafc;
+            }
+            iframe {
+                width: 100%;
+                height: 1000px;
+                border: none;
+                margin-bottom: 40px;
+                background: white;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+            h1, h2 {
+                color: #2d3748;
+            }
+        </style>
+    </head>
+    <body>
 
-    <iframe src="downtime_report.html"></iframe>
+        <h1 style="text-align:center; font-size: 2em; color: #1b4f72; margin-top: 20px;">
+            📊 BROAN Manufacturing Weekly Pulse
+        </h1>
+        <p style="text-align:center; font-size: 1em; color: #555;">
+            Week Data (July 13 – July 19, 2025)
+        </p>
 
-    <iframe src="alarm_report.html"></iframe>
+        <h2>Downtime Analysis</h2>
+        <iframe src="downtime_report.html"></iframe>
 
-    <iframe src="FINAL_alarm_downtime_correlations.html"></iframe>
+        <h2>Alarm Insights</h2>
+        <iframe src="alarm_report.html"></iframe>
 
-    <div class="insights-section">
-        <h2>Actionable Insights</h2>
+        <h2>Correlation Analysis</h2>
+        <iframe src="FINAL_alarm_downtime_correlations.html"></iframe>
 
-        <h3>Downtime Insights</h3>
-        <ul>
-            <li>Prioritize preventive maintenance on D-Can East and AutoHood Assembly to reduce equipment failure downtime (30%).</li>
-            <li>Enhance Shift 1 operator training to reduce long average downtimes (22.6 mins per event).</li>
-            <li>Improve inventory tracking and supplier coordination to minimize material shortage-related downtime (8%).</li>
-            <li>Focus process improvements on high-downtime SKUs: AE80BF1, 696NE, and 688ES.</li>
-            <li>Optimize setup and changeover processes using SMED for quick efficiency gains.</li>
-        </ul>
-
-        <h3>Alarms Insights</h3>
-        <ul>
-            <li>Investigate prolonged alarms at M-Can North stations like NBlrAssem and st08Robot with 100+ Hours average duration.</li>
-            <li>Treat Priority 3 alarms as critical, as they account for 84% of total alarm-related downtime.</li>
-            <li>Review and fix BOILER OFF INTERLOCK alarm issues at AutoHood Paint to prevent 5300+ mins stoppages.</li>
-        </ul>
-
-        <h3>Correlation Analysis Insights</h3>
-        <ul>
-            <li>Focus on WB16Unload in Evolve South where “Good Part Conv. Not Clear” alarm triggers 89% of downtimes – ensure conveyor clearance and sensor checks.</li>
-            <li>Target KOAssem and EPQueues in AutoHood Fab as “KNOCKOUT SUPPLY LOW” and “ENDPANELS LOW” alarms predict 37% of downtime – optimize material replenishment and alerts.</li>
-            <li>Prioritize PinCrimp and NWBeam stations in AutoHood Assembly where frequent alarms predict failures – introduce focused maintenance and review alarm logic for false triggers.</li>
-            <li>Address Scroll and st08Robot issues in M-Can North as “Scroll Not Snapped” and robot faults predict 17% of downtimes – check mechanical setup and E-stop logic.</li>
-        </ul>
-    </div>
-
-</body>
-</html>
+    </body>
+    </html>
+    
